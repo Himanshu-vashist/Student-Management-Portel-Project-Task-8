@@ -1,0 +1,41 @@
+/* Add this in your App.css or another stylesheet */
+.navbar {
+    background: rgba(0, 0, 0, 0.9); /* Slight transparency */
+    backdrop-filter: blur(5px);   
+    position:fixed;
+    width:100%;
+    margin-bottom: 5rem;
+    top: 0;
+    z-index: 9999;
+      /* Adds a subtle blur to make the navbar stand out */
+  }
+  .logo {
+    width: 150px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Make it a block element */
+    margin: 20px auto; /* Center the logo horizontally and add vertical spacing */
+    border: 2px solid #333; /* Optional: Add a border around the logo */
+    border-radius: 10px; /* Optional: Add rounded corners to the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow effect */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Scale the logo slightly on hover */
+}
+
+  .navbar-brand {
+    font-size: 1.5rem;  /* Make brand slightly larger */
+    color: #f0f0f0;     /* Change brand color */
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;  /* Increase font size */
+    color: #f0f0f0;
+  }
+  
+  .nav-link:hover {
+    color: #00b4d8; /* Hover effect to change link color */
+    transition: color 0.3s ease;
+  }
+  

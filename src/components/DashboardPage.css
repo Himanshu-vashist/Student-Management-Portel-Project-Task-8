@@ -1,0 +1,68 @@
+.calendar-widget {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .calendar-widget th {
+    font-weight: 500;
+    color: #6b7280;
+  }
+  
+  .calendar-widget td {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  .calendar-widget button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  
+  .calendar-widget button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .chart-container {
+    position: relative;
+    margin: auto;
+    height: 300px;
+  }
+  
+  .card {
+    transition: transform 0.2s ease-in-out;
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .stats-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .calendar-widget {
+      padding: 0.5rem;
+    }
+  
+    .calendar-widget button {
+      width: 1.75rem;
+      height: 1.75rem;
+      font-size: 0.875rem;
+    }
+  }
