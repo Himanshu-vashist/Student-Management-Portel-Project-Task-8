@@ -10,7 +10,7 @@ const StudentDetailsPage = () => {
   useEffect(() => {
     const fetchStudent = async () => {
       try {
-        const response = await fetch('/data/students.json'); // Adjust path if needed
+        const response = await fetch('/data/students.json'); 
         if (!response.ok) throw new Error('Network response was not ok');
         const students = await response.json();
         const foundStudent = students.find((s) => s.id === parseInt(id));

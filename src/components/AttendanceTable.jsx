@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 const AttendanceTable = () => {
   const [students, setStudents] = useState([]);
 
-  // Fetch students data from students.json
   useEffect(() => {
     fetch('/data/students.json')
       .then(response => {
@@ -17,7 +16,7 @@ const AttendanceTable = () => {
       })
       .catch(error => {
         console.error("Error fetching students:", error);
-        // Optionally, set students to an empty array to avoid errors
+        
         setStudents([]);
       });
   }, []);
@@ -34,7 +33,7 @@ const AttendanceTable = () => {
       <header className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Daily Attendance</h2>
         <div className="flex space-x-4 items-center">
-          <span className="text-gray-600 font-medium">BHM / BHM-2 / Semester 4 / B</span>
+          <span className="text-gray-600 font-medium">CLASS 9</span>
           <input type="date" className="border border-gray-300 rounded px-2 py-1" />
           <button className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Export Report</button>
         </div>

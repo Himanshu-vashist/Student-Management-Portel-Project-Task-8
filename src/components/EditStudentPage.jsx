@@ -1,10 +1,10 @@
-// src/components/EditStudentPage.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'; // Update this line
 
 const EditStudentPage = () => {
-  const { id } = useParams(); // Get student ID from URL
-  const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const { id } = useParams(); 
+  const navigate = useNavigate(); 
   
   const [student, setStudent] = useState({
     name: '',

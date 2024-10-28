@@ -54,7 +54,7 @@
     justify-content: center;
   }
   
-  /* Responsive styles */
+ 
   @media (max-width: 768px) {
     .calendar-widget {
       padding: 0.5rem;
